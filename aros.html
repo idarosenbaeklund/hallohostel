@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo Hostel - AROS infoside</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/css/lightslider.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/js/lightslider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:600" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>ARoS</h1>
+        <img class="pin_pil" src="image/tilbage_pil.png" alt="Mulighed for at komme tilbage til forrige side">
+    </header>
+
+    <div class="demo">
+        <ul id="image-gallery">
+
+            <li>
+                <img class="slideshow" src="image/aros.jpg" />
+            </li>
+            <li>
+                <img class="slideshow" src="image/aros2.jpg" />
+            </li>
+            <li>
+                <img class="slideshow" src="image/aros3.jpg" />
+            </li>
+        </ul>
+    </div>
+
+
+
+    <h2 class="overinfo">
+        Info om ARoS
+    </h2>
+
+
+
+    <article id="omaros">
+
+        <h3 class="over">ARoS</h3>
+        <p class="p">
+            Hovedmuseet inden for kunst i Aarhus og et enestående internationalt billede- og oplevelseshus for børn og voksne, unge og ældre - og er et mentalt fitness center og et perfekt sted til socialt samvær. </p>
+
+        <h3 class="over">Rainbow panorama </h3>
+
+        <p class="p">
+            På toppen af ARoS finder du Your rainbow panorama. Den ikoniske regnbue er skabt af Olafur Eliasson og står som et flot varetegn for Aarhus. Når du går rundt i Your rainbow panorama, får du et fantastisk blik ud over Aarhus i alle regnbuens smukke farver. Snyd ikke dig selv for en tur i regnbuen efter mørkets frembrud, hvor du kan se byens mange lys fra oven, når museet hver onsdag holder åbent til klokken 22.00.
+        </p>
+
+        <section class="info">
+            <article class="del1">
+                <h3> Åbningstider:</h3>
+                <p class="del1">
+                    <strong>Tirsdag:</strong> kl.10-17 <br> <strong>Onsdag:</strong> kl.10-22 <br> <strong>Torsdag-søndag:</strong> kl.10-17 <br> <strong>Mandag: </strong>lukket
+                </p>
+
+                <p class="del1">
+                    Vurdering: <img class="stjerne" src="image/stjerne.png" />
+                    <img class="stjerne" src="image/stjerne.png" />
+                    <img class="stjerne" src="image/stjerne.png" />
+                    <img class="stjerne" src="image/stjerne.png" />
+                    <img class="stjerne" src="image/stjerne_sort.png" />
+                </p>
+
+                <p class="del1">
+                    Afstand: 2,4km
+                </p>
+            </article>
+
+            <article class="del2">
+                <h3> Pris:</h3>
+                <p class="del2">
+                    Voksne: 130 KR. <br> Unge: 100 KR. <br> Grupper: 110 KR. <br> Børn: Gratis
+                </p>
+            </article>
+        </section>
+        <h2 class="overinfo">Begivenheder</h2>
+
+        <p id="andre">Deltag i en begivenhed med andre gæster fra Hallo Hostel eller opret en ny begivenhed</p>
+
+        <section class="felt1">
+            <div class="billede1">
+                <img class="pin" src="image/pin2.png" alt=""></div>
+            <div class="tekst">
+                <p>Tidspunkt: 13.00</p>
+                <p>Antal deltagere: 5</p>
+                <p>Foran ARoS</p>
+            </div>
+            <div class="billede2">
+                <img class="logo" src="image/pin.png" alt=""> </div>
+        </section>
+
+        <section class="felt1">
+            <div class="billede1">
+                <img class="pin" src="image/pin3.png" alt=""></div>
+            <div class="tekst">
+                <p>Tidspunkt: 10.00</p>
+                <p>Antal deltagere: 2</p>
+                <p>Receptionen</p>
+            </div>
+            <div class="billede2">
+                <img class="logo" src="image/pin.png" alt=""></div>
+
+        </section>
+
+        <section class="felt1">
+            <div class="billede1">
+                <img class="pin" src="image/pin3.png" alt=""></div>
+            <div class="tekst">
+                <p>Tidspunkt: 15.00</p>
+                <p>Antal deltagere: 3</p>
+                <p>Foran ARoS</p>
+            </div>
+            <div class="billede2">
+                <img class="logo" src="image/pin.png" alt=""></div>
+        </section>
+
+
+        <section class="felt2">
+            <div class="tekst">
+                <p id="opret">Opret begivenhed</p>
+            </div>
+        </section>
+
+
+    </article>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#content-slider").lightSlider({
+
+                keyPress: true,
+            });
+            $('#image-gallery').lightSlider({
+
+                item: 1,
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

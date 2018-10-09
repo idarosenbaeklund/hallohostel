@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo Hostels</title>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:600" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body class="kort2">
+    
+    <header>
+
+        <h1>ATTRAKTIONER</h1>
+
+        <img class="pin_pil" src="image/tilbage_pil.png" alt="Mulighed for at komme tilbage til forrige side">
+    </header>
+
+
+    <div id="knapper">
+        <div id="kultur_knap">KULTUR</div>
+        <div id="gratis_knap">GRATIS</div>
+        <div id="underholdning_knap">UNDER-<br>HOLDNING</div>
+        <div id="nulstil"><img src="image/reset.png" alt="reset knap"></div>
+    </div>
+
+
+    <section>
+
+        <div class="pil_gratis">
+            <img id="pil1" src="image/pil_bla.png" alt="pil">
+            <p class="pil_gratis" id="sted1">Mølleparken</p>
+        </div>
+
+        <div class="pil_underholdning">
+            <img id="pil2" src="image/pil_gra.png" alt="pil">
+            <p class="pil_underholdning" id="sted2">Den Gamle By</p>
+        </div>
+
+        <div class="pil_kultur">
+            <img id="pil3" src="image/pil_orange.png" alt="pil">
+            <p id="sted3">ARoS</p>
+        </div>
+
+        <div class="pil_kultur">
+            <img id="pil4" src="image/pil_orange.png" alt="pil">
+            <p id="sted4">Kvindemuseum</p>
+        </div>
+
+        <div class="pil_underholdning">
+            <img id="pil5" src="image/pil_gra.png" alt="pil">
+            <p id="sted5">Tivoli Friheden</p>
+        </div>
+
+        <div class="pil_gratis">
+            <img id="pil6" src="image/pil_bla.png" alt="pil">
+            <p id="sted6">Klostertorv</p>
+        </div>
+
+    </section>
+
+    <div id="info">
+        <img src="image/close.png" alt="luk" class="luk">
+        <a href="aros.html" class="visit-aros">ARoS</a>
+        <p class="infobox">Åben nu</p>
+        <img src="image/penge.png" alt="pris" class="pris">
+        <img src="image/penge.png" alt="pris" class="pris">
+        <img src="image/penge.png" alt="pris" class="pris">
+        <img src="image/penge_sort.png" alt="pris" class="pris">
+        <img src="image/penge_sort.png" alt="pris" class="pris">
+        <br>
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne_sort.png" alt="vurdering" class="vurdering">
+        <p class="infobox">2,5 km væk</p>
+        <a href="aros.html" class="mer-info">MERE INFO</a>
+        <img src="image/aros.jpg" alt="aros" class="aros-picture">
+    </div>
+
+    <div id="info1">
+        <img src="image/close.png" alt="luk" class="luk1">
+        <a href="#" class="visit-aros">Tivoli Friheden</a>
+        <p class="infobox">Åben nu</p>
+        <img src="image/penge.png" alt="pris" class="pris">
+        <img src="image/penge.png" alt="pris" class="pris">
+        <img src="image/penge.png" alt="pris" class="pris">
+        <img src="image/penge_sort.png" alt="pris" class="pris">
+        <img src="image/penge_sort.png" alt="pris" class="pris">
+        <br>
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne.png" alt="vurdering" class="vurdering">
+        <img src="image/stjerne_sort.png" alt="vurdering" class="vurdering">
+        <p class="infobox">6 km væk</p>
+        <a href="#" class="mer-info">MERE INFO</a>
+
+        <img src="/image/tivoli.jpg" alt="tivoli" class="tivoli-picture">
+    </div>
+
+
+    <a href="../begivenheder.html">
+        <button class="knap4"> 
+BEGIVENHEDER <img id="event" src="image/gruppe.png" alt="Hallo Hostel Aarhus logo">
+</button>
+    </a>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#info").hide();
+            $("#pil3").click(function() {
+                $("#info").show();
+                $("#info1").hide();
+            });
+            $("#info1").hide();
+            $("#pil5").click(function() {
+                $("#info1").show();
+                $("#info").hide();
+            });
+            $(".luk").click(function() {
+                $("#info").hide();
+            });
+            $(".luk1").click(function() {
+                $("#info1").hide();
+            });
+
+            <!-- Filterknapper start --> 
+
+            var klik = $("#gratis_knap");
+            klik.click(function() {
+
+
+                let skjul = function() {
+                    $('.pil_kultur').hide();
+                    $('.pil_underholdning').hide();
+                    $('.pil_gratis').hide();
+                }
+
+                skjul();
+
+                $('.pil_gratis').show();
+
+            });
+
+            var klik = $("#underholdning_knap");
+            klik.click(function() {
+                let skjul = function() {
+                    $('.pil_kultur').hide();
+                    $('.pil_underholdning').hide();
+                    $('.pil_gratis').hide();
+                }
+
+                skjul();
+
+                $('.pil_underholdning').show();
+
+            });
+
+            var klik = $("#kultur_knap");
+            klik.click(function() {
+                let skjul = function() {
+                    $('.pil_kultur').hide();
+                    $('.pil_underholdning').hide();
+                    $('.pil_gratis').hide();
+                }
+
+                skjul();
+
+                $('.pil_kultur').show();
+
+            });
+
+            var klik = $("#nulstil");
+            klik.click(function() {
+                let skjul = function() {
+                    $('.pil_kultur').show();
+                    $('.pil_underholdning').show();
+                    $('.pil_gratis').show();
+                }
+
+                skjul();
+
+            });
+        });
+    </script>
+</body>
+</html>

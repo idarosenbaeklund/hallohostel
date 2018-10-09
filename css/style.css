@@ -1,0 +1,562 @@
+/*Global start*/
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #464646;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    'work sans',
+    'areal';
+}
+
+h1 {
+    color: #f8ba19;
+    background-color: #464646;
+    text-align: center;
+    padding: 5%;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/*Global slut*/
+
+/*Forside start*/
+
+#flag img {
+    width: 10%;
+}
+
+#logo {
+    width: 85%;
+    margin-left: 6%;
+    margin-top: 10%;
+}
+
+.knapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.knap1,
+.knap2,
+.knap3 {
+    padding: 4%;
+    background-color: #f8ba19;
+    color: white;
+    font-size: 24px;
+    margin: 4%;
+    margin-left: 6%;
+    margin-right: 10%;
+}
+
+#mand {
+    width: 10%;
+    margin-left: 4%;
+}
+
+#mad {
+    width: 13%;
+    margin-left: 7%;
+}
+
+#events {
+    width: 15%;
+    margin-left: 4%;
+}
+
+/*Forside slut*/
+
+/*AROS INFO+BEGIVENHED START*/
+
+/*slideshow*/
+
+.demo {
+    width: 100%;
+}
+
+.slideshow {
+    width: 100%;
+}
+
+#image-gallery {}
+
+/*slideshow slut*/
+
+.overinfo {
+    background-color: #f8ba19;
+    padding: 2%;
+    color: whitesmoke;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.del1 {
+    margin-left: 2%;
+    text-align: left;
+    width: 60%;
+    font-size: 15px;
+}
+
+.del2 {
+    text-align: left;
+    font-size: 15px;
+    margin-left: -7%;
+}
+
+.p {
+    text-align: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 15px;
+}
+
+.over {
+    margin-left: 5%;
+}
+
+#opret {
+    background-color: #2aa2a7;
+    padding: 5%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: whitesmoke;
+}
+
+.felt1 {
+    background-color: #f8ba19;
+    color: white;
+}
+
+.billede2 {
+    margin-top: 40px;
+}
+
+.billede1 {
+    margin-top: 35px;
+}
+
+.pin {
+    width: 47px;
+}
+
+.logo {
+    width: 60px;
+}
+
+#besog {
+    background-color: #464646;
+    padding: 5%;
+    color: whitesmoke;
+    font-size: 200%;
+}
+
+.felt1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.color {
+    background-color: #2aa2a7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.deltager {
+    width: 70px;
+    margin-right: 60px;
+}
+
+.stjerne {
+    width: 4%;
+}
+
+#deltag-knap {
+    background-color: #f8ba19;
+    margin-bottom: 20%;
+}
+
+
+/*AROS INFO+BEGIVENHED SLUT*/
+
+/* BEGIVENHEDER START*/
+
+.pin_pil {
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+    position: relative;
+}
+
+#her {
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.gul {
+    background-color: #f8ba19;
+    color: whitesmoke;
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* BEGIVENHEDER START*/
+
+#gul {
+    background-color: #f8ba19;
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: whitesmoke;
+}
+
+.pic1 {
+    width: 60%;
+    height: 50%;
+    margin-left: 1%;
+    border: 2px solid #2aa2a7
+}
+
+.tekst1,
+.tekst2,
+.tekst3 {
+    margin-left: 2%;
+    margin-top: -4%;
+    text-align: left;
+    font-size: 13px
+}
+
+.tekst3 {
+    text-align: left;
+}
+
+.pin1 {
+    width: 50px;
+    height: 40px;
+
+}
+
+.pin2 {
+    margin-top: 3.8%;
+    width: 62px;
+    height: 30px;
+}
+
+.gruppe1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.gruppe2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.gruppe3 {
+    display: flex;
+    flex-direction: row;
+}
+
+#plus {
+    font-size: 20px;
+    background-color: #2aa2a7;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px; 
+}
+
+
+.linje {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -20px;
+}
+
+/* BEGIVENHEDER SLUT */
+
+/* KORT2 START*/
+
+.kort2 {
+    background-image: url(../image/kort4.png);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* KNAPPER SATART */
+
+#knapper {
+    display: flex;
+    margin-top: 15px;
+}
+
+#kultur_knap {
+    background: #f8ba19;
+    color: white;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    margin: 5px;
+}
+
+#gratis_knap {
+    background: #2aa2a7;
+    color: white;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    margin: 5px;
+}
+
+#underholdning_knap {
+    background: #464646;
+    color: white;
+    height: 25px;
+    width: 100px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+    margin: 5px;
+}
+
+
+#nulstil img {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+/* KNAPPER SLUT */
+
+/* PIL START */
+
+#pil1,
+#pil2,
+#pil5,
+#pil6 {
+    width: 30px;
+}
+
+#pil1 {
+    position: absolute;
+    left: 120px;
+    top: 200px;
+}
+
+#sted1 {
+    color: #2aa2a7;
+    position: absolute;
+    top: 225px;
+    left: 90px;
+
+}
+
+#pil2 {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
+#sted2 {
+    color: #464646;
+    position: absolute;
+    top: 425px;
+    left: 170px;
+
+}
+
+#pil3 {
+    width: 40px;
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
+
+#sted3 {
+    color: #f8ba19;
+    position: absolute;
+    top: 330px;
+    left: 40px;
+}
+
+#pil4 {
+    width: 40px;
+    position: absolute;
+    top: 500px;
+    left: 250px;
+}
+
+#sted4 {
+    color: #f8ba19;
+    position: absolute;
+    top: 530px;
+    left: 220px;
+}
+
+#pil5 {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+}
+
+#sted5 {
+    color: #464646;
+    position: absolute;
+    top: 280px;
+    left: 260px;
+}
+
+#pil6 {
+    position: absolute;
+    top: 400px;
+    left: 70px;
+}
+
+#sted6 {
+    color: #2aa2a7;
+    position: absolute;
+    top: 430px;
+    left: 50px;
+}
+
+/* PIL SLUT*/
+
+/*STYLING AF INFOBOX*/
+
+#info,
+#info1 {
+    width: 90%;
+    margin: 0;
+    background-color: #ebebeb;
+    padding: 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom: -10%;
+    z-index: 1;
+}
+
+.mer-info {
+    text-decoration: none;
+    background-color: #2aa2a7;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.visit-aros {
+    color: #f8ba19;
+    margin: 0;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#pin {
+    width: 30px;
+}
+
+#pin1 {
+    width: 40px;
+    margin-left: 80px;
+}
+
+.pris,
+.vurdering {
+    width: 12px;
+}
+
+.aros-picture,
+.tivoli-picture {
+    width: 60%;
+    margin-left: 20px;
+    margin-top: -200px;
+    border: 1px solid #2aa2a7;
+}
+
+.luk,
+.luk1 {
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+#close-btn {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    top: 0px;
+    left: 278px;
+    cursor: pointer;
+    z-index: 220;
+    background-image: url('close.png');
+    background-repeat: no-repeat;
+}
+
+.infobox {
+    text-align: left;
+}
+
+/* INFOBOX SLUT */
+
+.knap4 {
+    background-color: #f8ba19;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 40%;
+    padding: 2%;
+    position: fixed;
+    bottom: 10px;
+}
+
+#event {
+    width: 10%;
+    z-index: -1;
+}
+
+.infobox {
+    text-align: left;
+}
+
+/* KORT2 SLUT*/
